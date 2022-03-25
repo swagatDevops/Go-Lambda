@@ -2,10 +2,10 @@ package main
 
 import "github.com/aws/aws-lambda-go/lambda"
 
-func displayThis() (string, error) {
+func Handler() (string, error) {
 	return "Serverless Software Development using AWS Lambda with Go", nil
 }
 
 func main() {
-	lambda.Start(displayThis)
+	lambda.Start(Handler)
 }
